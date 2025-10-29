@@ -2,6 +2,55 @@
 
 A modern, interactive recipe discovery application built for busy professionals like Taylor who want to find inspiration in the kitchen quickly. Features intelligent multi-ingredient search, dark mode, favorites system, and beautiful animations.
 
+---
+
+## 🎥 Demo Video
+
+▶️ [Watch the Full Project Demo on YouTube](https://youtu.be/BXwW_Fk1Klo?si=RNHlcjgAI4sGC_9Y)
+
+---
+
+## 🌐 Live Project
+
+🔗 **Vercel Deployment:** [https://recipe-flow-bice.vercel.app/](https://recipe-flow-bice.vercel.app/)
+
+---
+
+## 📸 Project Snapshots
+
+### 🏠 Home Page
+**Light Mode**
+![Home Page Light](./snapshots/home%20page%20light%20snapshot.png)
+
+**Dark Mode**
+![Home Page Dark](./snapshots/homepage%20dark%20snapshot.png)
+
+---
+
+### 🔎 Searching Recipes
+![Search With Ingredients](./snapshots/search%20with%20ingredients%20.png)
+![Loading Recipe](./snapshots/loading%20recipe.png)
+
+---
+
+### 🍽️ Recipe Details
+![Recipe Detail](./snapshots/recipe%20detail.png)
+![Recipe Ingredients](./snapshots/recipe%20detail%20ingrdnt.png)
+
+---
+
+### ❤️ Favourite Items
+![Favourite Items](./snapshots/favourite%20items.png)
+
+---
+
+### 📱 Mobile Views
+
+| Landing Page | Search Page | Favourites |
+|---------------|-------------|-------------|
+| ![Mobile Landing](./snapshots/mobile%20landing%20page.jpg) | ![Mobile Search](./snapshots/mobile%20search%20page.jpg) | ![Mobile Favourites](./snapshots/mobile%20favourites.jpg) |
+
+
 ## 🎯 Why This Project?
 
 **User Need:** Taylor is a busy professional who wants to cook when coming home but needs quick inspiration. They might want to:
@@ -127,27 +176,27 @@ npm run preview
 ## 📦 Project Structure
 
 \`\`\`
-src/
-├── routes/
-│   ├── +page.svelte              # Main page with state management
-│   └── +layout.svelte            # Root layout with theme provider
-├── lib/
-│   ├── stores/
-│   │   ├── theme.ts              # Dark/light mode store
-│   │   ├── favorites.ts          # Favorites management
-│   │   └── search-history.ts     # Search history store
-│   └── components/
-│       ├── recipe-search.svelte       # Search interface
-│       ├── recipe-grid.svelte         # Recipe cards grid
-│       ├── recipe-detail.svelte       # Recipe modal with details
-│       ├── recipe-skeleton.svelte     # Loading skeleton
-│       ├── favorite-button.svelte     # Heart icon for favorites
-│       ├── search-history.svelte      # Recent searches dropdown
-│       ├── theme-toggle.svelte        # Dark/light mode toggle
-│       ├── youtube-embed.svelte       # YouTube video embed
-│       ├── ai-suggestion-button.svelte # AI-powered suggestions
-│       └── recipe-suggestions.svelte  # Initial page suggestions
-└── app.css                       # Tailwind config + custom animations
+src/  
+├── routes/  
+│   ├── +page.svelte              # Main page with state management    
+│   └── +layout.svelte            # Root layout with theme provider  
+├── lib/  
+│   ├── stores/  
+│   │   ├── theme.ts              # Dark/light mode store  
+│   │   ├── favorites.ts          # Favorites management  
+│   │   └── search-history.ts     # Search history store  
+│   └── components/  
+│       ├── recipe-search.svelte       # Search interface  
+│       ├── recipe-grid.svelte         # Recipe cards grid  
+│       ├── recipe-detail.svelte       # Recipe modal with details  
+│       ├── recipe-skeleton.svelte     # Loading skeleton  
+│       ├── favorite-button.svelte     # Heart icon for favorites  
+│       ├── search-history.svelte      # Recent searches dropdown  
+│       ├── theme-toggle.svelte        # Dark/light mode toggle  
+│       ├── youtube-embed.svelte       # YouTube video embed  
+│       ├── ai-suggestion-button.svelte # AI-powered suggestions  
+│       └── recipe-suggestions.svelte  # Initial page suggestions  
+└── app.css                       # Tailwind config + custom animations  
 \`\`\`
 
 ## 🎨 Design Decisions
@@ -239,7 +288,10 @@ This project demonstrates:
 ## 🚀 Deployment
 
 Deploy to static host:
-- **Vercel** : `vercel deployed link: https://recipe-flow-bice.vercel.app/`
+- **Vercel Deployed Link** : https://recipe-flow-bice.vercel.app/
+
+Chatgpt discussion link:
+- https://chatgpt.com/share/6901acd3-86b8-8001-962e-f6f8c49b10ca
 
 ## 🙏 Credits
 
