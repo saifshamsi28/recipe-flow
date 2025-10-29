@@ -15,46 +15,58 @@ A modern, interactive recipe discovery application built for busy professionals 
 🔗 **Vercel Deployment:** [https://recipe-flow-bice.vercel.app/](https://recipe-flow-bice.vercel.app/)
 
 ---
-
 ## 📸 Project Snapshots
+
+---
 
 ### 🏠 Home Page
 <p align="center">
-  <img src="snapshots/homepage_light_snapshot.png" width="40%" alt="Home Page Light" style="margin:3px;"/>
-  <img src="snapshots/homepage_dark_snapshot.png" width="40%" alt="Home Page Dark" style="margin:3px;"/>
+  <img src="snapshots/homepage_light_snapshot.png" width="80%" alt="Home Page Light" style="margin:5px;"/>
+</p>
+<p align="center">
+  <img src="snapshots/homepage_dark_snapshot.png" width="80%" alt="Home Page Dark" style="margin:5px;"/>
 </p>
 
 ---
 
 ### 🔎 Searching Recipes
 <p align="center">
-  <img src="snapshots/search_with_ingredients.png" width="40%" alt="Search With Ingredients" style="margin:3px;"/>
-  <img src="snapshots/loading_recipe.png" width="40%" alt="Loading Recipe" style="margin:3px;"/>
+  <img src="snapshots/search_with_ingredients.png" width="80%" alt="Search With Ingredients" style="margin:5px;"/>
+</p>
+<p align="center">
+  <img src="snapshots/loading_recipe.png" width="80%" alt="Loading Recipe" style="margin:5px;"/>
 </p>
 
 ---
 
 ### 🍽️ Recipe Details
 <p align="center">
-  <img src="snapshots/recipe_detail.png" width="40%" alt="Recipe Detail" style="margin:3px;"/>
-  <img src="snapshots/recipe_detail_ingrdnt.png" width="40%" alt="Recipe Ingredients" style="margin:3px;"/>
+  <img src="snapshots/recipe_detail.png" width="80%" alt="Recipe Detail" style="margin:5px;"/>
+</p>
+<p align="center">
+  <img src="snapshots/recipe_detail_ingrdnt.png" width="80%" alt="Recipe Ingredients" style="margin:5px;"/>
 </p>
 
 ---
 
 ### ❤️ Favourite Items
 <p align="center">
-  <img src="snapshots/favourite_items.png" width="40%" alt="Favourite Items" style="margin:3px;"/>
+  <img src="snapshots/favourite_items.png" width="80%" alt="Favourite Items" style="margin:5px;"/>
 </p>
 
 ---
 
 ### 📱 Mobile Views
 <p align="center">
-  <img src="snapshots/mobile_landing_page.jpg" width="30%" alt="Mobile Landing Page" style="margin:3px;"/>
-  <img src="snapshots/mobile_search_page.jpg" width="30%" alt="Mobile Search Page" style="margin:3px;"/>
-  <img src="snapshots/mobile_favourites.jpg" width="30%" alt="Mobile Favourites" style="margin:3px;"/>
+  <img src="snapshots/mobile_landing_page.jpg" width="40%" alt="Mobile Landing Page" style="margin:5px;"/>
 </p>
+<p align="center">
+  <img src="snapshots/mobile_search_page.jpg" width="40%" alt="Mobile Search Page" style="margin:5px;"/>
+</p>
+<p align="center">
+  <img src="snapshots/mobile_favourites.jpg" width="40%" alt="Mobile Favourites" style="margin:5px;"/>
+</p>
+
 
 
 
