@@ -33,20 +33,37 @@
 
 	async function loadSuggestions() {
 		isSuggestionsLoading = true;
+		console.log('🔄 Loading suggestions...');
+		
 		try {
 			const shuffled = [...suggestedIngredients].sort(() => Math.random() - 0.5);
-			let loadedSuggestions: any[] = [];
-			let ingredientIndex = 0;
+			const loadedSuggestions: any[] = [];
+			const maxAttempts = shuffled.length;
+			let attempts = 0;
 
-			// Keep trying until we have 4 suggestions or run out of ingredients
-			while (loadedSuggestions.length < 4 && ingredientIndex < shuffled.length) {
-				const ingredient = shuffled[ingredientIndex];
-				ingredientIndex++;
-
+			// Keep trying until we have 4 suggestions or exhausted all ingredients
+			while (loadedSuggestions.length < 4 && attempts < maxAttempts) {
+				const ingredient = shuffled[attempts];
+				attempts++;
+				
 				try {
+					console.log(`🔍 Fetching recipe for: ${ingredient} (${loadedSuggestions.length + 1}/4)`);
+					
+					const controller = new AbortController();
+					const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+					
 					const response = await fetch(
-						`https://www.themealdb.com/api/json/v1/1/filter.php?i=${encodeURIComponent(ingredient)}`
+						`https://www.themealdb.com/api/json/v1/1/filter.php?i=${encodeURIComponent(ingredient)}`,
+						{ signal: controller.signal }
 					);
+					
+					clearTimeout(timeoutId);
+					
+					if (!response.ok) {
+						console.log(`⚠️ HTTP ${response.status} for ${ingredient}`);
+						continue;
+					}
+					
 					const data = await response.json();
 					
 					if (data.meals && data.meals.length > 0) {
@@ -55,15 +72,23 @@
 							...randomRecipe,
 							suggestedIngredient: ingredient
 						});
+						console.log(`✅ Added suggestion: ${randomRecipe.strMeal} (${ingredient})`);
+					} else {
+						console.log(`❌ No recipes found for: ${ingredient}`);
 					}
 				} catch (err) {
-					console.error(`Error fetching suggestions for ${ingredient}:`, err);
+					if (err instanceof Error && err.name === 'AbortError') {
+						console.error(`⏱️ Timeout fetching ${ingredient}`);
+					} else {
+						console.error(`❌ Error fetching ${ingredient}:`, err);
+					}
 				}
 			}
 
+			console.log(`📦 Finished loading. Total suggestions: ${loadedSuggestions.length}/4`);
 			suggestions = loadedSuggestions;
 		} catch (err) {
-			console.error('Error loading suggestions:', err);
+			console.error('❌ Critical error loading suggestions:', err);
 		} finally {
 			isSuggestionsLoading = false;
 		}
