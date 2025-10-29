@@ -34,34 +34,34 @@
 	async function loadSuggestions() {
 		isSuggestionsLoading = true;
 		try {
-			// Randomly select 4 ingredients from the suggested list
 			const shuffled = [...suggestedIngredients].sort(() => Math.random() - 0.5);
-			const selectedIngredients = shuffled.slice(0, 4);
+			let loadedSuggestions: any[] = [];
+			let ingredientIndex = 0;
 
-			// Fetch one recipe for each selected ingredient
-			const suggestionPromises = selectedIngredients.map(async (ingredient) => {
+			// Keep trying until we have 4 suggestions or run out of ingredients
+			while (loadedSuggestions.length < 4 && ingredientIndex < shuffled.length) {
+				const ingredient = shuffled[ingredientIndex];
+				ingredientIndex++;
+
 				try {
 					const response = await fetch(
 						`https://www.themealdb.com/api/json/v1/1/filter.php?i=${encodeURIComponent(ingredient)}`
 					);
 					const data = await response.json();
+					
 					if (data.meals && data.meals.length > 0) {
-						// Get a random recipe from the results
 						const randomRecipe = data.meals[Math.floor(Math.random() * data.meals.length)];
-						return {
+						loadedSuggestions.push({
 							...randomRecipe,
 							suggestedIngredient: ingredient
-						};
+						});
 					}
-					return null;
 				} catch (err) {
 					console.error(`Error fetching suggestions for ${ingredient}:`, err);
-					return null;
 				}
-			});
+			}
 
-			const loadedSuggestions = await Promise.all(suggestionPromises);
-			suggestions = loadedSuggestions.filter((s) => s !== null);
+			suggestions = loadedSuggestions;
 		} catch (err) {
 			console.error('Error loading suggestions:', err);
 		} finally {
