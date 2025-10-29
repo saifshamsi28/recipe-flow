@@ -20,31 +20,31 @@ A modern, interactive recipe discovery application built for busy professionals 
 
 ### 🏠 Home Page
 <p align="center">
-  <img src="snapshots/homepage_light_snapshot.png" width="50%" alt="Home Page Light" style="margin:3px;"/>
-  <img src="snapshots/homepage_dark_snapshot.png" width="50%" alt="Home Page Dark" style="margin:3px;"/>
+  <img src="snapshots/homepage_light_snapshot.png" width="40%" alt="Home Page Light" style="margin:3px;"/>
+  <img src="snapshots/homepage_dark_snapshot.png" width="40%" alt="Home Page Dark" style="margin:3px;"/>
 </p>
 
 ---
 
 ### 🔎 Searching Recipes
 <p align="center">
-  <img src="snapshots/search_with_ingredients.png" width="50%" alt="Search With Ingredients" style="margin:3px;"/>
-  <img src="snapshots/loading_recipe.png" width="50%" alt="Loading Recipe" style="margin:3px;"/>
+  <img src="snapshots/search_with_ingredients.png" width="40%" alt="Search With Ingredients" style="margin:3px;"/>
+  <img src="snapshots/loading_recipe.png" width="40%" alt="Loading Recipe" style="margin:3px;"/>
 </p>
 
 ---
 
 ### 🍽️ Recipe Details
 <p align="center">
-  <img src="snapshots/recipe_detail.png" width="50%" alt="Recipe Detail" style="margin:3px;"/>
-  <img src="snapshots/recipe_detail_ingrdnt.png" width="50%" alt="Recipe Ingredients" style="margin:3px;"/>
+  <img src="snapshots/recipe_detail.png" width="40%" alt="Recipe Detail" style="margin:3px;"/>
+  <img src="snapshots/recipe_detail_ingrdnt.png" width="40%" alt="Recipe Ingredients" style="margin:3px;"/>
 </p>
 
 ---
 
 ### ❤️ Favourite Items
 <p align="center">
-  <img src="snapshots/favourite_items.png" width="48%" alt="Favourite Items" style="margin:3px;"/>
+  <img src="snapshots/favourite_items.png" width="40%" alt="Favourite Items" style="margin:3px;"/>
 </p>
 
 ---
