@@ -239,7 +239,7 @@ This project demonstrates:
 ## 🚀 Deployment
 
 Deploy to static host:
-- **Vercel** : `vercel deploy`
+- **Vercel** : `vercel deployed link: https://recipe-flow-bice.vercel.app/`
 
 ## 🙏 Credits
 
