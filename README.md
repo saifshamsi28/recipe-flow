@@ -19,36 +19,44 @@ A modern, interactive recipe discovery application built for busy professionals 
 ## 📸 Project Snapshots
 
 ### 🏠 Home Page
-**Light Mode**
-![Home Page Light](./snapshots/home%20page%20light%20snapshot.png)
-
-**Dark Mode**
-![Home Page Dark](./snapshots/homepage%20dark%20snapshot.png)
+<p align="center">
+  <img src="./snapshots/home page light snapshot.png" width="48%" alt="Home Page Light" style="margin:5px;"/>
+  <img src="./snapshots/homepage dark snapshot.png" width="48%" alt="Home Page Dark" style="margin:5px;"/>
+</p>
 
 ---
 
 ### 🔎 Searching Recipes
-![Search With Ingredients](./snapshots/search%20with%20ingredients%20.png)
-![Loading Recipe](./snapshots/loading%20recipe.png)
+<p align="center">
+  <img src="./snapshots/search with ingredients .png" width="48%" alt="Search With Ingredients" style="margin:5px;"/>
+  <img src="./snapshots/loading recipe.png" width="48%" alt="Loading Recipe" style="margin:5px;"/>
+</p>
 
 ---
 
 ### 🍽️ Recipe Details
-![Recipe Detail](./snapshots/recipe%20detail.png)
-![Recipe Ingredients](./snapshots/recipe%20detail%20ingrdnt.png)
+<p align="center">
+  <img src="./snapshots/recipe detail.png" width="48%" alt="Recipe Detail" style="margin:5px;"/>
+  <img src="./snapshots/recipe detail ingrdnt.png" width="48%" alt="Recipe Ingredients" style="margin:5px;"/>
+</p>
 
 ---
 
 ### ❤️ Favourite Items
-![Favourite Items](./snapshots/favourite%20items.png)
+<p align="center">
+  <img src="./snapshots/favourite items.png" width="48%" alt="Favourite Items" style="margin:5px;"/>
+  <img src="./snapshots/home page light snapshot.png" width="48%" alt="Another Snapshot" style="margin:5px;"/>
+</p>
 
 ---
 
 ### 📱 Mobile Views
+<p align="center">
+  <img src="./snapshots/mobile landing page.jpg" width="30%" alt="Mobile Landing Page" style="margin:5px;"/>
+  <img src="./snapshots/mobile search page.jpg" width="30%" alt="Mobile Search Page" style="margin:5px;"/>
+  <img src="./snapshots/mobile favourites.jpg" width="30%" alt="Mobile Favourites" style="margin:5px;"/>
+</p>
 
-| Landing Page | Search Page | Favourites |
-|---------------|-------------|-------------|
-| ![Mobile Landing](./snapshots/mobile%20landing%20page.jpg) | ![Mobile Search](./snapshots/mobile%20search%20page.jpg) | ![Mobile Favourites](./snapshots/mobile%20favourites.jpg) |
 
 
 ## 🎯 Why This Project?
